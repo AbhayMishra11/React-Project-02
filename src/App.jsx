@@ -10,16 +10,16 @@ export default class App extends Component {
   render() {
     return (
       < Context.Provider value={''} >
-        <div>
+        <div> 
           <Router>
             <Navbar />
             <Routes>
-              <Route path='/' element={<News search={'world'} />} />
-              <Route path='/health' element={<News search={'health'} />} />
-              <Route path='/sports' element={<News search={'sports'} />} />
-              <Route path='/technology' element={<News search={'technology'} />} />
-              <Route path='/science' element={<News search={'science'} />} />
-              <Route path='/movies' element={<News search={'movies'} />} />
+              <Route exact path='/' element={<News key='india' search={'india'} />} />
+              <Route exact path='/health' element={<News key='health' search={'health'} />} />
+              <Route exact path='/sports' element={<News key='sports' search={'sports'} />} />
+              <Route exact path='/technology' element={<News key='technology' search={'technology'} />} />
+              <Route exact path='/science' element={<News key='science' search={'science'} />} />
+              <Route exact path='/movies' element={<News key='movies' search={'movies'} />} />
             </Routes>
           </Router>
         </div>
