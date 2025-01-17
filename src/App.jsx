@@ -10,11 +10,11 @@ export default class App extends Component {
   render() {
     return (
       < Context.Provider value={''} >
-        <div> 
+        <div className='overflow-x-hidden w-[100vw]'> 
           <Router>
             <Navbar />
             <Routes>
-              <Route exact path='/' element={<News key='india' search={'india'} />} />
+              <Route exact path='/' element={<News key='indian' search={'indian'} />} />
               <Route exact path='/health' element={<News key='health' search={'health'} />} />
               <Route exact path='/sports' element={<News key='sports' search={'sports'} />} />
               <Route exact path='/technology' element={<News key='technology' search={'technology'} />} />

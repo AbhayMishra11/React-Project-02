@@ -13,6 +13,8 @@ export class NewsItems extends Component {
       fullDate: '',
       fullTime: ''
     };
+    let searchData = this.props.search.charAt(0).toUpperCase() + this.props.search.slice(1);
+    document.title = `NewsCast - ${searchData} Category`
   }
 
 
